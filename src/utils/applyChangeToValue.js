@@ -13,11 +13,11 @@ const applyChangeToValue = (
   let oldPlainTextValue = getPlainText(value, config)
 
   let lengthDelta = oldPlainTextValue.length - plainTextValue.length
-  if (selectionStartBefore === 'undefined') {
+  if (selectionStartBefore === null || selectionStartBefore === 'undefined') {
     selectionStartBefore = selectionEndAfter + lengthDelta
   }
 
-  if (selectionEndBefore === 'undefined') {
+  if (selectionEndBefore === null || selectionEndBefore === 'undefined') {
     selectionEndBefore = selectionStartBefore
   }
 
