@@ -4,6 +4,7 @@
 /coverage
 /demo/dist
 /demo/build
+.idea
 
 npm-debug.log*
 
